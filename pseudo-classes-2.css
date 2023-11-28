@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+li:first-child{
+    color: red;
+}
+
+li:last-child {
+    color: green;
+
+}
+
+span:first-of-type{
+    color: red;
+}
+p:first-of-type {
+    color: blue;
+
+
+}
+
+.container:not(p) {
+color: yellow;
+
+}
+
+.caixa:nth-child(2){
+   
+    color: red;
+}
+
+/* Targets/* Targets the second child of .caixa */
+.caixa:nth-child(2) {
+    /* Sets the text color to red */
+    color: red;
+ } 
+
+ li :nth-last-child(6) {
+    background-color: blue
+ }

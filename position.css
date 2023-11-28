@@ -1,0 +1,51 @@
+
+/*  - Vamos falar de position 
+*    - O position é um atributo que define a posição do elemento na página.
+*      Ele pode ser definido em pixels, porcentagem ou em relação ao tamanho da janela/tela.
+--Position static (padrão) -Não aeita valores de top, botton. right e left.
+--Position relative -O elemento se move para o local indicado pelos valores de top, bottom, right e left.
+--Position absolute -O elemento sai do fluxo normal do documento e fica fixo no lugar indicado pelos valores de top
+--Position absolute -O elemento sai do fluxo normal da página e fica onde eu quiser.
+--Position fixed -Aqui ele vai ficar no lugar mesmo quando rolar a pagina,fixa o elemento na tela.
+
+--Propriedades:
+-top : Define a distância entre o topo do elemento e o topo da linha do documento.
+-bottom : Define a distância entre o fundo do elemento e o fundo da linha do documento.
+-left : Define a distância entre a esquerda do elemento e o início da linha do documento.
+-right : Define a distância entre a direita do elemento e o final da linha do documento.
+*/
+
+
+*/
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dav {
+    height: 350px;
+    width: 350px;
+    background-color:  #ff1390;
+
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background-color:  #ffff03;
+
+}
+
+.tanana {
+    background: green;
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,110 @@
+/* Pseudo Classes 
+:active -> quando o elemento está ativo, ou seja, está sendo pressionado.
+:visited -> seleciona o link ue foi visitado.
+:hover -> quando o mouse passe em cima do elemento.
+:focus -> quando um input tem foco de entrada.
+:checked -> usado em radio/checkbox/select.
+:enabled -> elemento está habilitado.
+:read-only -> seleciona input ou textarea que são apenas leitura.
+:disabled -> elemento desabilitado.     
+:empty -> elemento que não tem filho
+:first-child -> elemento é o primeiro filho de seu pai/ex: primeira li de uma ul/ primeiro span de uma div.
+:last-child -> elemento é o ultimo filho de seu pai/ ex: última li de uma ul/ último span de uma
+div.
+:nth-child(n) -> nth-child(2), vai buscar a segunda linha da tabela./seleciona o elemento baseado na sua posição. ex: :nth-child(3)
+:nth-child(n) -> nth-child(2), vai pegar a segunda li da ul/ segundo span da div
+:nth-of-type(n) -> nth-of-type(1), vai pegar a primeira li da ul/ último elemento de seu tipo entre os filhos de seu pai.
+:nth-of-type(n) -> nth-of-type(1), vai pegar a primeira li da ul/
+primeiro span da div.
+:not(x) -> x negrito, vai pegar todos os elementos que NÃO forem li e span.
+:not(x) -> x = pseudo class, negrito todos os elementos exceto aqueles com a pseudo class passada como argumento.
+:not(x) -> x = pseudo class, negacao de qualquer coisa.
+:not(x) -> x = pseudo class, negrito todos os elementos exceto aqueles com a pseudo class passada como parametro./not estiliza os elementos,exceto o qque está dentro do ()
+:not(x) -> x = pseudo class, negrito todos os elementos exceto aqueles com a pseudo class passada como parametro.
+:not(x) -> x = pseudo class, negrito todos os elementos exceto aqueles com a pseudo class passada como parametro.
+:not(x) -> x = pseudo class, negrito todos os elementos exceto aqueles com a pseudo class.*/
+/* Exemplos 
+p:first-letter {color: red;} //Muda cor da letra inicial de todo parágrafo para vermelha
+h1:before {content:"Aula ";} //Adiciona "Aula" antes do h1
+ul > li::after{content:"*"; color:red;} //Coloca * no final de cada item da lista
+h1:before {content:"Aula ";} //Adiciona "Aula" antes do título principal
+ul li:nth-child(3){background-color: yellow;} //Troca a cor de fundo da terceira lin
+input[type="text"]:required {border: 3px solid red;} //Coloca borda vermelha nos campos obrig
+tr:nth-child(even){background-color: #CCC;} //Alterna as linhas das tabelas 
+span:empty{display: none;} //Oculta spans sem conteúdo
+ul li:hover {background-color: yellow; color: black;} //Deixa o fundo amarelo e letra preta nas
+li's ao passar o mouse por cima.l
+:last-of-type -> último elemento de seu tipo entre os filhos de seu elemento pai.
+:first-of-type -> Primeiro elemento de seu tipo entre os filhos de seu elemento pai.
+
+
+
+
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+a :active {
+    color: rgb(226, 147, 43);
+}
+
+a :visited {
+    color: green;
+}
+
+a :hover {
+    color: red;
+}
+
+p {
+    color:blue;
+}
+
+p :hover {
+    color: yellow;
+}
+
+/* Change color on hover */
+p:hover {
+    color: yellow; /* Yellow text on hover */
+}
+
+input :checked {
+  
+    width: 100px;
+    height: 100px;
+}
+
+.input-1:focus {
+    border: 1px solid red;
+    outline: none;
+}
+
+
+.input2 :read-only {
+    
+    border: 1px solid blue;
+    outline: none;
+}
+
+
+.container {
+    height: 100px;
+    width: 100px;
+    background:  rgb(7, 91, 7);
+}
+
+.container:empty {
+
+    background: rgb(146, 146, 212);
+}
+
+
+

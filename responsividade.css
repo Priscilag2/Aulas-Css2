@@ -1,0 +1,44 @@
+/* Responsividade 
+All: Para todos os dispositivos.
+Braille: Para dispositivos tateis.
+Enbossed: Para dispositivos que imprimen em braile.
+Handhelds: Para dispositivos portáteis  pequenos, como celulares e tablets, e combanda limitada.
+Large screens: Dispositivos com telas grandes (1200px ou mais),screen para monitores ou dispositivos com telas coloridas e resolução adequada.
+Large screens: Dispositivos com telas grandes, como computadores de mesa.
+Only screen and (max-width: 600px): Somente para a tela do usuário, se o tamanho
+da tela for menor ou igual a 600 pixels.
+Print: Somente para impressão.
+Projection: Somente para projetores.
+Speech: Somente para leitores de fala.
+Television: Somente para televisões.
+
+Orientação::
+landscape: Se a orientação da tela estiver horizontal, largura maior que altura, exemplo: celular deitado.
+portrait: Se a orientação da tela estiver vertical, altura maior que largura, exemplo: iPad no modo retrato
+
+
+
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background:magenta;
+}
+
+@media screen and (max-width: 600px) and (orientation:landscape){
+    div {
+        background: rgb(238, 21, 21);
+        height: 200px;
+        width: 200px;
+        }
+    
+}
